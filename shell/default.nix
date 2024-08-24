@@ -54,6 +54,9 @@
 
       # programming
 
+      ## nix
+      alejandra
+
       ## emacs
       emacs-lsp-booster
 
@@ -121,8 +124,8 @@
 
     sessionVariables = {
       GO111MODULE = "on";
-      EDITOR = "nvim";
-      VISUAL = "nvim";
+      EDITOR = "emacsclient";
+      VISUAL = "emacsclient";
       NIXPKGS_ALLOW_UNFREE = "1";
       PULUMI_CONFIG_PASSPHRASE = "";
     };

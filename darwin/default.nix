@@ -7,8 +7,8 @@
 
   environment = {
     variables = {
-      EDITOR = "nvim";
-      VISUAL = "nvim";
+      EDITOR = "emacsclient";
+      VISUAL = "emacsclient";
     };
   };
 
