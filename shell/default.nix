@@ -5,8 +5,6 @@
 
   home = {
     packages = with pkgs; [
-      #neovim # customized by overlay
-
       # net tools
       bind
       nmap
@@ -46,6 +44,7 @@
       gzip
       findutils
       gawk
+      stow
 
       # cloud
       google-cloud-sdk
@@ -53,6 +52,8 @@
       s3cmd
 
       # programming
+
+      watchman
 
       ## nix
       alejandra
@@ -66,12 +67,12 @@
       rustup # rust
 
       ## node
-      deno # node runtime
-      nodejs
-      nodePackages.npm
-      nodePackages.yarn
-      nodePackages.pnpm
-      nodePackages.expo-cli
+      # deno # node runtime
+      # nodejs
+      # nodePackages.npm
+      # nodePackages.yarn
+      # nodePackages.pnpm
+      # nodePackages.expo-cli
     ];
 
     shellAliases = {
@@ -172,6 +173,12 @@
     lsd = {
       enable = true;
       enableAliases = true;
+    };
+
+    direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
     };
 
     go = {

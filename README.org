@@ -1,0 +1,7 @@
+#+BEGIN_SRC shell
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --update
+
+# NOTE: this is now started in aerospace.toml
+# brew services start sketchybar
+#+END_SRC

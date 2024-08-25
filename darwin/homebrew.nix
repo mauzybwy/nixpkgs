@@ -9,7 +9,7 @@
     # will not be uninstalled when removed
     # ID is the app store app ID
     masApps = {
-      Xcode = 497799835;
+      # Xcode = 497799835;
     };
 
     onActivation = {
@@ -27,8 +27,11 @@
       # ios development
       "cocoapods"
       "ios-deploy"
+
+      # window management
       "yabai"
       "skhd"
+      "sketchybar"
     ];
     casks = [
       # utilities

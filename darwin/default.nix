@@ -17,16 +17,7 @@
   };
 
   services = {
-    # FIXME: driver issues
-    karabiner-elements.enable = false;
     nix-daemon.enable = true;
-    sketchybar = {
-      enable = false;
-      extraPackages = with pkgs; [
-        jq
-        gh
-      ];
-    };
   };
 
   networking = {
@@ -62,7 +53,7 @@
     };
 
     defaults = {
-      ".GlobalPreferences"."com.apple.mouse.scaling" = 4.0;
+      ".GlobalPreferences"."com.apple.mouse.scaling" = 1.0;
       spaces.spans-displays = false;
       universalaccess = {
         # FIXME: cannot write universal access
@@ -95,7 +86,7 @@
       };
 
       NSGlobalDomain = {
-        _HIHideMenuBar = false;
+        _HIHideMenuBar = true;
         AppleFontSmoothing = 0;
         AppleInterfaceStyle = "Dark";
         AppleKeyboardUIMode = 3;
