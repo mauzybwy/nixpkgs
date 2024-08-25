@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./git.nix
+    # ./zsh.nix
   ];
 
   home = {
@@ -146,6 +147,27 @@
     nushell.enable = true; # zsh alternative
     broot.enable = true; # browser big folders
     eza.enable = true;
+
+    # zsh = {
+    #   enable = true;
+    #   enableCompletion = true;
+    #   autocd = true;
+    #   autosuggestion.enable = true;
+    #   dotDir = ".config/zsh";
+
+    #   history = {
+    #     expireDuplicatesFirst = true;
+    #     ignoreDups = true;
+    #     ignoreSpace = true; # ignore commands starting with a space
+    #     save = 20000;
+    #     size = 20000;
+    #     share = true;
+    #   };
+
+    #   initExtra = ''
+    #     eval "$(/opt/homebrew/bin/brew shellenv)"
+    #   '';
+    # };
 
     # sqlite browser history
     atuin = {

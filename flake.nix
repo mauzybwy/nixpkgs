@@ -108,12 +108,14 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
+
             # makes all inputs available in imported files for hm
             extraSpecialArgs = {
               inherit inputs;
               pkgs-zsh-fzf-tab =
                 import inputs.nixpkgs-zsh-fzf-tab {inherit system;};
             };
+
             users.${user} = {...}:
               with inputs; {
                 imports = [

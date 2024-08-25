@@ -10,6 +10,9 @@
       EDITOR = "emacsclient";
       VISUAL = "emacsclient";
     };
+    systemPath = [
+      "/opt/homebrew/bin" # Just put the whole thing in our path
+    ];
   };
 
   programs = {
@@ -18,6 +21,13 @@
 
   services = {
     nix-daemon.enable = true;
+    skhd.enable = true;
+    sketchybar = {
+      enable = true;
+      extraPackages = [
+        pkgs.jq
+      ];
+    };
   };
 
   networking = {
