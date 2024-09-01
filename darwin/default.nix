@@ -77,7 +77,7 @@
         autohide-time-modifier = 0.0;
         orientation = "left";
         dashboard-in-overlay = true;
-        largesize = 50;
+        largesize = 30;
         tilesize = 50;
         magnification = true;
         launchanim = false;
@@ -85,6 +85,7 @@
         show-recents = false;
         show-process-indicators = false;
         static-only = true;
+        expose-group-by-app = true;
       };
 
       finder = {

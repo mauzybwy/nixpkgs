@@ -18,6 +18,7 @@
       fd
       ripgrep # fast search
 
+      eternal-terminal # ssh, but FOREVER
       grc # colored log output
       gitAndTools.delta # pretty diff tool
       sshfs # mount folders via ssh
@@ -37,7 +38,7 @@
       comma # run nix binaries on demand
 
       # gnu binaries
-      coreutils-full # multiple tools
+      # coreutils-full # multiple tools
       gnutar
       gnused
       gnugrep
@@ -46,6 +47,8 @@
       findutils
       gawk
       stow
+
+      cmake
 
       # cloud
       google-cloud-sdk
@@ -65,10 +68,15 @@
       ## python
       python3
       poetry # python tools
-      rustup # rust
+
+      ## rust
+      rustup
+
+      # sql
+      sqlfluff
 
       ## node
-      # deno # node runtime
+      deno # node runtime
       # nodejs
       # nodePackages.npm
       # nodePackages.yarn
@@ -77,6 +85,9 @@
     ];
 
     shellAliases = {
+      # nix
+      renix = "darwin-rebuild switch --flake ~/.nixpkgs";
+
       # builtins
       size = "du -sh";
       cp = "cp -i";
@@ -104,6 +115,7 @@
       ji = "zi";
 
       # programs
+      e = "emacsclient";
       g = "git";
       k = "kubectl";
       d = "docker";
@@ -120,6 +132,7 @@
     sessionPath = [
       "$HOME/go/bin"
       "$HOME/.local/bin"
+      "$HOME/.local/script"
       "$HOME/.cargo/bin"
       "$HOME/.krew/bin"
     ];
