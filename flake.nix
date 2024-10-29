@@ -119,8 +119,7 @@
             users.${user} = {...}:
               with inputs; {
                 imports = [
-                  # ./home-manager
-                  ./shell
+                  ./home-manager
                 ];
                 home.stateVersion = "23.11";
               };

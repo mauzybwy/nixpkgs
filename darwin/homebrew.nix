@@ -11,6 +11,7 @@
     masApps = {
       # Xcode = 497799835;
       TestFlight = 899247664;
+      WhatsApp = 310633997;
     };
 
     onActivation = {
@@ -19,6 +20,19 @@
       autoUpdate = true;
       upgrade = true;
     };
+
+    taps = [
+      # default
+      "homebrew/bundle"
+      "homebrew/services"
+
+      # custom
+      "railwaycat/emacsmacport" # emacs-mac
+      "d12frosted/emacs-plus" # emacs-plus
+      "FelixKratz/formulae" # borders
+      "koekeishiya/formulae" # yabai/skhd
+      "nikitabobko/tap" # aerospace
+    ];
 
     brews = [
       "sniffnet" # monitor network traffic
@@ -30,12 +44,19 @@
       # ios development
       "cocoapods"
       "ios-deploy"
+      "fastlane"
 
       # window management
       "yabai"
       "skhd"
       "sketchybar"
+
+      "emacs-plus@30"
+
+      #rails
+      "ruby"
     ];
+
     casks = [
       # utilities
       "aldente" # battery management
@@ -60,9 +81,14 @@
       "slack"
       "discord"
 
+      # art
+      "inkscape"
+      "krita"
+
       "bitwarden" # password manager
       "spotify" # music
       "android-studio" # needed for react-native
+      "zulu@17"
       "obs" # stream / recoding software
       "readdle-spark"
       "shottr" # screenshot tool
@@ -75,17 +101,6 @@
       "vlc" # media player
       "linear-linear" # task management
       "balenaetcher" # usb flashing
-    ];
-    taps = [
-      # default
-      "homebrew/bundle"
-      "homebrew/services"
-
-      # custom
-      "railwaycat/emacsmacport" # emacs-mac
-      "FelixKratz/formulae" # borders
-      "koekeishiya/formulae" # yabai/skhd
-      "nikitabobko/tap" # aerospace
     ];
   };
 }
