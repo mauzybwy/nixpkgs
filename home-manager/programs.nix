@@ -15,6 +15,13 @@
 
   # zsh = {
   #   enable = true;
+  #   sessionVariables = {
+  #     NIX_ZSH_TEST = ":)";
+  #   };
+  # };
+
+  # zsh = {
+  #   enable = true;
   #   enableCompletion = true;
   #   autocd = true;
   #   autosuggestion.enable = true;

@@ -2,6 +2,8 @@
 with pkgs; [
   (import ./python-packages.nix {pkgs = pkgs;})
 
+  # darwin.xcode_15_1
+
   # net tools
   bind
   nmap
@@ -14,6 +16,7 @@ with pkgs; [
   fd
   ripgrep # fast search
 
+  flyctl # fly.io
   eternal-terminal # ssh, but FOREVER
   grc # colored log output
   gitAndTools.delta # pretty diff tool
@@ -34,6 +37,8 @@ with pkgs; [
   presenterm # presentation tool
   comma # run nix binaries on demand
   postgresql # PostgreSQL
+  audacity # audio editing
+  httpie # http client
 
   # gnu binaries
   # coreutils-full # multiple tools
@@ -69,6 +74,10 @@ with pkgs; [
 
   ## rust
   rustup
+
+  ## elixir
+  elixir
+  erlang
 
   # sql
   sqlfluff

@@ -12,6 +12,7 @@
       # Xcode = 497799835;
       TestFlight = 899247664;
       WhatsApp = 310633997;
+      WireGuard = 1451685025;
     };
 
     onActivation = {
@@ -51,7 +52,8 @@
       "skhd"
       "sketchybar"
 
-      "emacs-plus@30"
+      # dev
+      # "emacs-plus@30"
 
       #rails
       "ruby"
@@ -64,11 +66,11 @@
       "hiddenbar" # hides menu bar icons
       "meetingbar" # shows upcoming meetings
       "aerospace" # tiling window manager
-      "syncthing" # real-time file synchronisation software
+      "syncthing" # real-time file synchronisation softwar
 
       # coding
       "postman"
-      "emacs-mac"
+      "emacs"
       "expo-orbit"
 
       # virtualization
@@ -84,6 +86,9 @@
       # art
       "inkscape"
       "krita"
+
+      # toonz
+      "milkytracker"
 
       "bitwarden" # password manager
       "spotify" # music
@@ -101,6 +106,12 @@
       "vlc" # media player
       "linear-linear" # task management
       "balenaetcher" # usb flashing
+      "steam" # gaming
     ];
+    extraConfig = ''
+      # NOTE: this also doesn't work :(
+      # system("export HOMEBREW_EMACS_PLUS_30_REVISION=9a1c76bf7ff49d886cc8e1a3f360d71e62544802")
+      # brew "emacs-plus@30"
+    '';
   };
 }

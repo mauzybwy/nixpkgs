@@ -2,7 +2,13 @@
   description = "system nix config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs = {
+      owner = "NixOS";
+      repo = "nixpkgs";
+      type = "github";
+      # 24.05
+      rev = "772b1ca1162faa1d19d51c1047eadf657ab629e5";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";

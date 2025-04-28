@@ -59,6 +59,7 @@
       "$HOME/.local/script"
       "$HOME/.cargo/bin"
       "$HOME/.krew/bin"
+      "$HOME/.mix/escripts"
     ];
 
     sessionVariables = {

@@ -9,6 +9,8 @@
     variables = {
       EDITOR = "emacsclient";
       VISUAL = "emacsclient";
+      # NOTE: this doesn't work :( -
+      # HOMEBREW_EMACS_PLUS_30_REVISION = "b963aae395e900c4fa3d864c030b01cf782f71c0";
     };
     systemPath = [
       "/opt/homebrew/bin" # Just put the whole thing in our path
